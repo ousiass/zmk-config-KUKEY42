@@ -10,6 +10,11 @@
     quick-tap-ms = <0>;
 };
 
+&trackball {
+    automouse-layer = <4>;
+    scroll-layers = <5>;
+};
+
 / {
     combos {
         compatible = "zmk,combos";
@@ -74,8 +79,8 @@
         default_layer {
             bindings = <
 &kp Q             &kp W         &kp E         &kp R                 &kp T                                                          &kp Y        &kp U  &lt 5 I    &kp O    &kp P
-&kp A             &kp S         &kp D         &kp F                 &kp G        &lt 6 SPACE                        &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
-&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                 &kp B        &kp COLON                          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp A             &kp S         &kp D         &kp F                 &kp G        &kp F15                        &kp MINUS      &kp H        &kp J  &kp K      &kp L    &kp SQT
+&mt LEFT_SHIFT Z  &kp X         &kp C         &kp V                 &kp B        &lt 6 COLON                          &kp SEMICOLON  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
 &kp LCTRL         &kp LEFT_WIN  &mt LEFT_ALT F13  &kp LS(LG(S))  &lt_to_layer_0 2 SPACE  &lt_to_layer_0 3 F14      &kp BACKSPACE  &lt 1 ENTER                             &kp DEL
             >;
 
