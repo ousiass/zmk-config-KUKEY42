@@ -59,7 +59,7 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
             bindings = <&mo>, <&to_layer_0>;
-
+            flavor = "balanced";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
         };
